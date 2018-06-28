@@ -7,6 +7,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { ... } from '@angular/material';
 
 const appRoutes: Routes = [
   {
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgbModule.forRoot()
     //...
   ],
   providers: [],
